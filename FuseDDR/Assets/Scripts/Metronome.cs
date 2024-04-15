@@ -19,12 +19,14 @@ public class Metronome : MonoBehaviour
     private bool running = false;
 
     public AudioClip metronomeClick;
+    private NoteSpawner spawner;
     void Start()
     {
         accent = signatureHi;
         double startTick = AudioSettings.dspTime;
         sampleRate = AudioSettings.outputSampleRate;
         nextTick = startTick * sampleRate;
+        spawner = FindObjectOfType<NoteSpawner>();
         running = true;
     }
 
@@ -55,6 +57,7 @@ public class Metronome : MonoBehaviour
                     accent = 1;
                     amp *= 2.0F;
                 }
+                spawner.queueNote = true;
                 //Debug.Log("Tick: " + accent + "/" + signatureHi);
             }
             phase += amp * 0.3F;
