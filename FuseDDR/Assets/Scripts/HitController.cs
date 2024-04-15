@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class HitController : MonoBehaviour
 {
-    public GameObject HitZoneL;
-    public GameObject HitZoneD;
-    public GameObject HitZoneU;
-    public GameObject HitZoneR;
+    public HitZone HitZoneL;
+    public HitZone HitZoneD;
+    public HitZone HitZoneU;
+    public HitZone HitZoneR;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,35 +17,39 @@ public class HitController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             HitZoneL.transform.localScale = new Vector3(.9f, .9f);
+            HitZoneL.AttemptHit();
         }
-        else
+        else if (Input.GetKeyUp(KeyCode.LeftArrow))
         {
             HitZoneL.transform.localScale = new Vector3(1f, 1f);
         }
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             HitZoneD.transform.localScale = new Vector3(.9f, .9f);
+            HitZoneD.AttemptHit();
         }
-        else
+        else if (Input.GetKeyUp(KeyCode.DownArrow))
         {
             HitZoneD.transform.localScale = new Vector3(1f, 1f);
         }
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             HitZoneU.transform.localScale = new Vector3(.9f, .9f);
+            HitZoneU.AttemptHit();
         }
-        else
+        else if (Input.GetKeyUp(KeyCode.UpArrow))
         {
             HitZoneU.transform.localScale = new Vector3(1f, 1f);
         }
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             HitZoneR.transform.localScale = new Vector3(.9f, .9f);
+            HitZoneR.AttemptHit();
         }
-        else
+        else if (Input.GetKeyUp(KeyCode.RightArrow))
         {
             HitZoneR.transform.localScale = new Vector3(1f, 1f);
         }
