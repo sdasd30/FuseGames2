@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class HitZone : MonoBehaviour
 {
+    public GameObject hitText;
+    public GameObject missText;
     GameObject insideArrow = null;
+    private GameObject activeText = null;
 
     private void Update()
     {
@@ -19,6 +22,11 @@ public class HitZone : MonoBehaviour
     {
         insideArrow.GetComponent<Arrow>().MissNote();   
         insideArrow = null;
+        if (activeText)
+        {
+            Destroy(activeText);
+        }
+        activeText = Instantiate(missText, this.transform.position, Quaternion.identity);
     }
 
     public int AttemptHit()
@@ -32,6 +40,12 @@ public class HitZone : MonoBehaviour
         int outscore = Mathf.Min(100, Mathf.RoundToInt(score));
         insideArrow.GetComponent<Arrow>().Hit();
         insideArrow = null;
+        if (activeText)
+        {
+            Destroy(activeText);
+        }
+        activeText = Instantiate(hitText, this.transform.position, Quaternion.identity);
+        activeText.GetComponent<TextMeshPro>().text = outscore.ToString();
         return outscore;
     }
 }
