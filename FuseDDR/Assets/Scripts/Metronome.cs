@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Metronome : MonoBehaviour
 {
+    public GameObject endscreen;
     public double bpm = 120.0f;
 
     double nextTick = 0.0F; // The next tick in dspTime
@@ -11,6 +12,10 @@ public class Metronome : MonoBehaviour
     private NoteSpawner spawner;
     private AudioSource soundSource;
     public AudioClip soundClip;
+
+    bool spawning = true;
+
+    float nextSceneTimer = 2f;
 
     void Start()
     {
@@ -28,13 +33,21 @@ public class Metronome : MonoBehaviour
             ticked = true;
             BroadcastMessage("OnTick");
         }
+        if (!soundSource.isPlaying)
+        {
+            spawning = false;
+            nextSceneTimer -= Time.deltaTime;
+            if (nextSceneTimer <= 0)
+            {
+                endscreen.SetActive(true);
+            }
+        }
     }
 
     // Just an example OnTick here
     void OnTick()
     {
-        spawner.queueNote = true;
-        soundSource.PlayOneShot(soundClip);
+        spawner.queueNote = spawning;
     }
 
     void FixedUpdate()
