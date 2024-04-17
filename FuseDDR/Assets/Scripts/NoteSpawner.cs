@@ -49,7 +49,6 @@ public class NoteSpawner : MonoBehaviour
         if (randomValue < restWeight)
         {
             // Spawn a rest
-            Debug.Log("Rest spawned.");
         }
         else if (randomValue < restWeight + noteWeight)
         {
@@ -57,14 +56,12 @@ public class NoteSpawner : MonoBehaviour
             randomValue = randomizer.GetRandom();
             int index = (int) Mathf.Lerp(0, notes.Count, randomValue / 255);
             Instantiate(notes[index], transform.position, Quaternion.identity);
-            Debug.Log("Single note spawned.");
         }
         else
         {
             // Spawn a double note
             int index = (int)Mathf.Lerp(0, doubles.Count, randomValue / 255);
             Instantiate(doubles[index], transform.position, Quaternion.identity);
-            Debug.Log("Double note spawned.");
         }
     }
 }

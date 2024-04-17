@@ -12,7 +12,6 @@ public class HitZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("enter");
         insideArrow = collision.gameObject;
     }
 
@@ -20,7 +19,6 @@ public class HitZone : MonoBehaviour
     {
         insideArrow.GetComponent<Arrow>().MissNote();   
         insideArrow = null;
-        Debug.Log("Exit");
     }
 
     public int AttemptHit()
