@@ -8,10 +8,11 @@ public class HitController : MonoBehaviour
     public HitZone HitZoneD;
     public HitZone HitZoneU;
     public HitZone HitZoneR;
+    private Score score;
     // Start is called before the first frame update
     void Start()
     {
-        
+        score = GetComponent<Score>();
     }
 
     // Update is called once per frame
@@ -20,7 +21,7 @@ public class HitController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             HitZoneL.transform.localScale = new Vector3(.9f, .9f);
-            HitZoneL.AttemptHit();
+            score.UpdateScore(HitZoneL.AttemptHit());
         }
         else if (Input.GetKeyUp(KeyCode.LeftArrow))
         {
@@ -29,7 +30,7 @@ public class HitController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             HitZoneD.transform.localScale = new Vector3(.9f, .9f);
-            HitZoneD.AttemptHit();
+            score.UpdateScore(HitZoneD.AttemptHit());
         }
         else if (Input.GetKeyUp(KeyCode.DownArrow))
         {
@@ -38,7 +39,7 @@ public class HitController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             HitZoneU.transform.localScale = new Vector3(.9f, .9f);
-            HitZoneU.AttemptHit();
+            score.UpdateScore(HitZoneU.AttemptHit());
         }
         else if (Input.GetKeyUp(KeyCode.UpArrow))
         {
@@ -47,7 +48,7 @@ public class HitController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             HitZoneR.transform.localScale = new Vector3(.9f, .9f);
-            HitZoneR.AttemptHit();
+            score.UpdateScore(HitZoneR.AttemptHit());
         }
         else if (Input.GetKeyUp(KeyCode.RightArrow))
         {
