@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8884503590305972843}
   - component: {fileID: 9192133291368096748}
   m_Layer: 0
-  m_Name: ArrowDContainer
+  m_Name: SlowArrowDContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,6 +56,10 @@ PrefabInstance:
     - target: {fileID: 2198521485646484735, guid: 2ce522db4afe3ba44af6f58625ac04c0, type: 3}
       propertyPath: m_Name
       value: ArrowD
+      objectReference: {fileID: 0}
+    - target: {fileID: 4871598558705542372, guid: 2ce522db4afe3ba44af6f58625ac04c0, type: 3}
+      propertyPath: scrollSpeed
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4993787402687776458, guid: 2ce522db4afe3ba44af6f58625ac04c0, type: 3}
       propertyPath: m_Sprite

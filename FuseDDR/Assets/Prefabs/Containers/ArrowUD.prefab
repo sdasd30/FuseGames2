@@ -58,6 +58,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArrowD
       objectReference: {fileID: 0}
+    - target: {fileID: 4993787402687776458, guid: 2ce522db4afe3ba44af6f58625ac04c0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fc09d949a9356eb4880f53ed851fcbbf, type: 3}
     - target: {fileID: 8978588214199032605, guid: 2ce522db4afe3ba44af6f58625ac04c0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1
@@ -116,18 +120,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1387014090110118921}
     m_Modifications:
-    - target: {fileID: 278400264615448679, guid: 267caed36dd34a8438091d66b464d3ba, type: 3}
-      propertyPath: scrollSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 278400264615448679, guid: 267caed36dd34a8438091d66b464d3ba, type: 3}
-      propertyPath: fadeDuration
-      value: 0.25
-      objectReference: {fileID: 0}
     - target: {fileID: 2198521485646484735, guid: 2ce522db4afe3ba44af6f58625ac04c0, type: 3}
       propertyPath: m_Name
       value: Arrow
       objectReference: {fileID: 0}
+    - target: {fileID: 4993787402687776458, guid: 2ce522db4afe3ba44af6f58625ac04c0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 790f999efda0d4546803e20b7a6c6cf8, type: 3}
     - target: {fileID: 8978588214199032605, guid: 2ce522db4afe3ba44af6f58625ac04c0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1
@@ -167,6 +167,14 @@ PrefabInstance:
     - target: {fileID: 8978588214199032605, guid: 2ce522db4afe3ba44af6f58625ac04c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 278400264615448679, guid: 267caed36dd34a8438091d66b464d3ba, type: 3}
+      propertyPath: scrollSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 278400264615448679, guid: 267caed36dd34a8438091d66b464d3ba, type: 3}
+      propertyPath: fadeDuration
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

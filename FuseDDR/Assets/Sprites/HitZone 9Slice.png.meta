@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8336e4bed703eaf488d743522343a5b8
+guid: 3db212b624856644b80f8e611bf90308
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,13 +43,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 7, y: 7, z: 7, w: 7}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -123,85 +123,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: noun-3576629_0
+      name: HitZone_0
       rect:
         serializedVersion: 2
-        x: 438
-        y: 615
-        width: 321
-        height: 322
+        x: 32
+        y: 32
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c16727e7a98d3d34fac6a7a7d619d390
-      internalID: -216517776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: noun-3576629_1
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 263
-        width: 321
-        height: 322
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07df943d49a749e4ebbde1f3e0436877
-      internalID: 433268844
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: noun-3576629_2
-      rect:
-        serializedVersion: 2
-        x: 438
-        y: 263
-        width: 321
-        height: 322
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8ab3dbc4c1e0d364381e09a5e3bbe176
-      internalID: 1547540197
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: noun-3576629_3
-      rect:
-        serializedVersion: 2
-        x: 795
-        y: 263
-        width: 321
-        height: 322
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ee0e25e68de7f4459b00f52e00e917b
-      internalID: -1378135144
+      spriteID: 266137e204f925e4b9898f4830b1df77
+      internalID: 615866454
       vertices: []
       indices: 
       edges: []
@@ -210,17 +147,14 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      noun-3576629_0: -216517776
-      noun-3576629_1: 433268844
-      noun-3576629_2: 1547540197
-      noun-3576629_3: -1378135144
+      HitZone_0: 615866454
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

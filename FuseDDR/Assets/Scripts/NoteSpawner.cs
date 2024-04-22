@@ -27,20 +27,8 @@ public class NoteSpawner : MonoBehaviour
         }
     }
 
-    public void Beat(float rest = 0, float note = 0, float doublenote = 0)
+    public void Beat()
     {
-        if (rest != 0)
-        {
-            restWeight = rest;
-        }
-        if (note != 0)
-        {
-            noteWeight = note;
-        }
-        if (doublenote != 0)
-        {
-            doubleWeight = 0;
-        }
         // Generate a random value between 0 and the sum of weights
         float totalWeight = restWeight + noteWeight + doubleWeight;
         float randomValue = (randomizer.GetRandom() / 255f) * totalWeight;

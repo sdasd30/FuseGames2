@@ -30,15 +30,25 @@ public class Randomizer : MonoBehaviour
     };
     // Start is called before the first frame update
 
+    public int seed;
+
     int randomIndex = 0;
+
+    private void Start()
+    {
+        Random.InitState(seed);
+    }
 
     public int GetRandom()
     {
-        randomIndex++;
-        if (randomIndex > randomTable.Length)
-        {
-            randomIndex = 0;
-        }
-        return randomTable[randomIndex];
+        return Random.Range(0, 256);
+        //randomIndex++;
+        //if (randomIndex > randomTable.Length)
+        //{
+        //    randomIndex = 0;
+        //}
+        //return randomTable[randomIndex];
     }
+
+
 }
