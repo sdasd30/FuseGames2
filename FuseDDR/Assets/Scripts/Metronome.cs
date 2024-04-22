@@ -35,6 +35,7 @@ public class Metronome : MonoBehaviour
         }
         if (!soundSource.isPlaying)
         {
+            Debug.Log("Done");
             spawning = false;
             nextSceneTimer -= Time.deltaTime;
             if (nextSceneTimer <= 0)
