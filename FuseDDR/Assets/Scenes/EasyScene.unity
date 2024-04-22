@@ -1677,7 +1677,7 @@ MonoBehaviour:
   doubles:
   - {fileID: 4470518520301882828, guid: 69764b74fe4a73541a096c3aa4235828, type: 3}
   - {fileID: 2900307678644699304, guid: cefbfa1b651f47f4a9a290dedb416c03, type: 3}
-  restWeight: 60
+  restWeight: 40
   noteWeight: 60
   doubleWeight: 20
 --- !u!4 &1264538248
