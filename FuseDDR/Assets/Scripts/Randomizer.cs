@@ -39,15 +39,20 @@ public class Randomizer : MonoBehaviour
         Random.InitState(seed);
     }
 
-    public int GetRandom()
+    public float GetRandom()
     {
-        return Random.Range(0, 256);
+        return Random.value;
         //randomIndex++;
         //if (randomIndex > randomTable.Length)
         //{
         //    randomIndex = 0;
         //}
         //return randomTable[randomIndex];
+    }
+
+    public int RandomRange(int min, int max)
+    {
+        return Random.Range(min, max);
     }
 
 

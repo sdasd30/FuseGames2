@@ -31,25 +31,26 @@ public class NoteSpawner : MonoBehaviour
     {
         // Generate a random value between 0 and the sum of weights
         float totalWeight = restWeight + noteWeight + doubleWeight;
-        float randomValue = (randomizer.GetRandom() / 255f) * totalWeight;
+        float randomValue = randomizer.GetRandom() * totalWeight;
+        Debug.Log(randomValue);
 
         // Determine which type of note to spawn based on the random value
         if (randomValue < restWeight)
         {
+            Debug.Log("rest");
             // Spawn a rest
         }
         else if (randomValue < restWeight + noteWeight)
         {
+            Debug.Log("single");
             // Spawn a single note
-            randomValue = randomizer.GetRandom();
-            int index = (int) Mathf.Lerp(0, notes.Count, randomValue / 255);
-            Instantiate(notes[index], transform.position, Quaternion.identity);
+            Instantiate(notes[randomizer.RandomRange(0, notes.Count)], transform.position, Quaternion.identity);
         }
         else
         {
+            Debug.Log("double");
             // Spawn a double note
-            int index = (int)Mathf.Lerp(0, doubles.Count, randomValue / 255);
-            Instantiate(doubles[index], transform.position, Quaternion.identity);
+            Instantiate(doubles[randomizer.RandomRange(0,doubles.Count)], transform.position, Quaternion.identity);
         }
     }
 }
