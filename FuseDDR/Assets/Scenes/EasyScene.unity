@@ -2107,7 +2107,6 @@ GameObject:
   - component: {fileID: 1296423340}
   - component: {fileID: 1296423343}
   - component: {fileID: 1296423342}
-  - component: {fileID: 1296423341}
   m_Layer: 5
   m_Name: EndPanel
   m_TagString: Untagged
@@ -2139,19 +2138,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -468.932, y: -284.5682}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1296423341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296423339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d847c57129ebfc47b8c02ea5d39dbcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneLoadName: EasyScene
 --- !u!114 &1296423342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2242,7 +2228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   up: 1
-  currentScene: 
+  currentScene: EasyScene
 --- !u!225 &1667966553
 CanvasGroup:
   m_ObjectHideFlags: 0
