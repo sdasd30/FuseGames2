@@ -7,6 +7,7 @@ public class EndSceneLoader : MonoBehaviour
 {
     RectTransform mytransform;
     public bool up = true;
+    public string currentScene;
 
     private void Start()
     {
@@ -29,7 +30,7 @@ public class EndSceneLoader : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (up)
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
+                SceneManager.LoadScene(currentScene, LoadSceneMode.Single);
             else
                 SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
         }

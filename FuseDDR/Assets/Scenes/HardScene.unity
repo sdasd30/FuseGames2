@@ -1591,6 +1591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   up: 1
+  currentScene: 
 --- !u!225 &977432958
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2463,6 +2464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47c77ab8a73a4fa408a06e00c41b4bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disabled: 0
   HitZoneL: {fileID: 1906887228}
   HitZoneD: {fileID: 906239612}
   HitZoneU: {fileID: 427585918}
@@ -2555,7 +2557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d847c57129ebfc47b8c02ea5d39dbcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneLoadName: MainMenu
+  sceneLoadName: HardScene
 --- !u!114 &1694949074
 MonoBehaviour:
   m_ObjectHideFlags: 0
