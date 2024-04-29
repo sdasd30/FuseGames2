@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HitController : MonoBehaviour
 {
+    public bool disabled;
     public HitZone HitZoneL;
     public HitZone HitZoneD;
     public HitZone HitZoneU;
@@ -18,6 +19,7 @@ public class HitController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (disabled) return;
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             HitZoneL.transform.localScale = new Vector3(.9f, .9f);

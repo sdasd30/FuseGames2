@@ -43,6 +43,7 @@ public class Metronome : MonoBehaviour
             nextSceneTimer -= Time.deltaTime;
             if (nextSceneTimer <= 0)
             {
+                FindObjectOfType<HitController>().disabled = true;
                 endscreen.SetActive(true);
             }
         }
