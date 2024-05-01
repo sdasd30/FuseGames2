@@ -1,5 +1,5 @@
 # FuseGames
-Small Games Developed for the FUSE program
+Small Games Developed for the FUSE program. Organized into directories containing the projects themselves.
 
 # List of Games
 
