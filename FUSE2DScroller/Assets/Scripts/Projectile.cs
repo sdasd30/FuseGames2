@@ -7,6 +7,7 @@ public class Projectile : MonoBehaviour
     public bool friendly = false;
     public float speed;
     public float lifespan;
+    public int damage;
     void Update()
     {
         // Move the projectile forward
@@ -18,11 +19,5 @@ public class Projectile : MonoBehaviour
         }
 
         // Destroy the projectile if it goes out of the screen
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        // Destroy the projectile if it collides with something
-        Destroy(gameObject);
     }
 }
