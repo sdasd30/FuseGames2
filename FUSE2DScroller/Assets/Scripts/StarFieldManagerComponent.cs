@@ -81,9 +81,9 @@ public class StarFieldManagerComponent : MonoBehaviour
                         mX[A] = mWorldViewPort.xMax;
                         mY[A] = GetRandom(mWorldViewPort.yMin, mWorldViewPort.yMax);
                         mZ[A] = 1F;
-                        mVX[A] = GetRandom(0.001F, 0.01F);
+                        mVX[A] = GetRandom(0.001F, 0.007F);
                         mStars[A].transform.position = new Vector3(mX[A], mY[A], 1F);
-                        float randomSize = 1f * mVX[A] * 100;
+                        float randomSize = 2f * mVX[A] * 100;
                         mStars[A].transform.localScale = new Vector3(randomSize, randomSize, 1F);
             }
          }
