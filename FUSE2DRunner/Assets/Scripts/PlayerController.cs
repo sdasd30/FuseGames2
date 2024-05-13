@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
-        mbody.AddForce(Vector2.up * 10, ForceMode2D.Impulse);
+        mbody.AddForce(Vector2.up * 12, ForceMode2D.Impulse);
     }
     
     public float GetSpeed()

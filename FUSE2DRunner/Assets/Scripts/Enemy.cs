@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        Debug.Log("Enter Collider");
+        if (collision.collider.CompareTag("Player"))
+        {
+            Debug.Log("kill player!");
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
