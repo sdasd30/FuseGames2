@@ -10,6 +10,7 @@ public class Coint : MonoBehaviour
         Debug.Log("Enter Collider");
         if (collision.CompareTag("Player"))
         {
+            FindObjectOfType<GameManager>().Coints++;
             Destroy(this.gameObject);
         }
     }

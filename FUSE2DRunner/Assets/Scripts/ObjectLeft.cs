@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class ObjectLeft : MonoBehaviour
 {
-    PlayerController player;
+    GameManager gm;
     float leftBound = -15f;
     public bool primary = false;
+    public float speedModifier = 0f;
     // Start is called before the first frame update
     void Start()
     {
-        player = FindObjectOfType<PlayerController>();
+        gm = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        this.transform.position = new Vector3(this.transform.position.x - player.GetSpeed() * Time.deltaTime, this.transform.position.y, this.transform.position.z);
+        this.transform.position = new Vector3(this.transform.position.x - (gm.WorldSpeed + speedModifier) * Time.deltaTime, this.transform.position.y, this.transform.position.z);
         if (this.transform.position.x <= leftBound)
         {
             if (primary)

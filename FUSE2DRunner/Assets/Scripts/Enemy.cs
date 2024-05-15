@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public bool immortal = false;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("Enter Collider");

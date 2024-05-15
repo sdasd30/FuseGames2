@@ -19,6 +19,10 @@ public class PlayerAttackObject : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
+            if (collision.GetComponent<Enemy>().immortal)
+            {
+                return;
+            }
             Destroy(collision.gameObject);
         }
     }
