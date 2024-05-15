@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     {
         grounded = IsGrounded();
         speed = maxSpeed;
-        if (Input.GetKey(KeyCode.UpArrow) && grounded)
+        if (Input.GetKey(KeyCode.UpArrow) && grounded && mbody.velocity.y <= 0 )
         {
             Jump();
             grounded = false;

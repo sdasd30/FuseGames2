@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
         if (collision.collider.CompareTag("Player"))
         {
             Debug.Log("kill player!");
+            Destroy(collision.gameObject);
         }
     }
 
