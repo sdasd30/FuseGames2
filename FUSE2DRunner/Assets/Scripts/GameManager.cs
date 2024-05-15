@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
     public float WorldSpeed { get => worldspeed; }
     private float worldspeed;
-    public float Coints;
+    public int Coints;
 
     PlayerController playerController;
 
