@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f985b316057b33d439e190f3342aef0e
+guid: 1c204cd260f779c4d9829a8077ba01d2
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638519834304668469
+  platformSettingsDirtyTick: 638519833768242334
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,9 +119,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Soldier_walk_Frame_0
+  - name: Soldier_shoot_Frame_0
     originalName: 
-    pivot: {x: 0.42424244, y: -0.02222222}
+    pivot: {x: 0.42424244, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -129,8 +129,8 @@ ScriptedImporter:
       x: 4
       y: 106
       width: 66
-      height: 90
-    spriteID: 10beaf81d2366984eb2eaeac7d34c9ee
+      height: 92
+    spriteID: f86e2f6c3256b714cbc06f3183846bf7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,7 +139,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 106}
-  - name: Soldier_walk_Frame_1
+  - name: Soldier_shoot_Frame_1
     originalName: 
     pivot: {x: 0.41538465, y: 0}
     alignment: 9
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 4
       width: 65
       height: 94
-    spriteID: 1fa59535870789a4ab61d0fa7d083d5a
+    spriteID: 59e1e84fa22375145907f04234f4ba9c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -162,28 +162,28 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1684347376
-    name: Soldier_walk
+    guid: 917966600
+    name: Soldier_shoot
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Soldier_walk_Frame_0
+    - name: Soldier_shoot_Frame_0
       frameIndex: 0
       cellRect:
         x: 12
-        y: 2
+        y: 0
         width: 66
-        height: 90
-      spriteId: 10beaf81d2366984eb2eaeac7d34c9ee
-    - name: Soldier_walk_Frame_1
+        height: 92
+      spriteId: f86e2f6c3256b714cbc06f3183846bf7
+    - name: Soldier_shoot_Frame_1
       frameIndex: 1
       cellRect:
         x: 13
         y: 0
         width: 65
         height: 94
-      spriteId: 1fa59535870789a4ab61d0fa7d083d5a
+      spriteId: 59e1e84fa22375145907f04234f4ba9c
     linkedCells: []
     parentIndex: -1
   platformSettings:

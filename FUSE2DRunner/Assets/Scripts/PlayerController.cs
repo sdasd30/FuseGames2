@@ -23,10 +23,9 @@ public class PlayerController : MonoBehaviour
     {
         grounded = IsGrounded();
         speed = maxSpeed;
-        if (Input.GetKey(KeyCode.UpArrow) && grounded && mbody.velocity.y <= 0 )
+        if (Input.GetKey(KeyCode.UpArrow) && grounded)
         {
             Jump();
-            grounded = false;
         }
         else if (!grounded && Input.GetKey(KeyCode.UpArrow) && mbody.velocity.y <= 0)
         {
@@ -45,16 +44,16 @@ public class PlayerController : MonoBehaviour
 
     private bool IsGrounded()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector3.up, 1.01f, ground);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector3.up, 1.05f, ground);
         bool isGrounded = hit.collider != null;
         // It is soo easy to make misstakes so do a lot of Debug.DrawRay calls when working with colliders...
-        Debug.DrawRay(transform.position, Vector2.down * 1.01f, isGrounded ? Color.green : Color.red, 0.1f);
+        Debug.DrawRay(transform.position, Vector2.down * 1.05f, isGrounded ? Color.green : Color.red, 0.1f);
         return isGrounded;
     }
 
     private void Jump()
     {
-        mbody.AddForce(Vector2.up * 12, ForceMode2D.Impulse);
+        mbody.AddForce(Vector2.up * 6, ForceMode2D.Impulse);
     }
     
     public float GetSpeed()
