@@ -10,7 +10,8 @@ public class Enemy : MonoBehaviour
     {
         if (collision.collider.CompareTag("Player"))
         {
-            //Destroy(collision.gameObject);
+            Destroy(collision.gameObject);
+            FindObjectOfType<GameManager>().CallEndScreen();
         }
     }
 

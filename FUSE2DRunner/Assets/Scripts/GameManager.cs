@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // read only float
+    public GameObject EndScreen;
+    public GameObject cointer;
 
 
     public float WorldSpeed { get => worldspeed; }
@@ -25,5 +26,11 @@ public class GameManager : MonoBehaviour
         {
             worldspeed = playerController.GetSpeed();
         }
+    }
+
+    public void CallEndScreen()
+    {
+        cointer.SetActive(false);
+        EndScreen.SetActive(true);
     }
 }

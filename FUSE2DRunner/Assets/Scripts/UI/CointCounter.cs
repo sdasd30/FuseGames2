@@ -18,6 +18,6 @@ public class CointCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = "COINTS! : " + gm.Coints.ToString();
+        text.text = "Coints : " + gm.Coints.ToString();
     }
 }
