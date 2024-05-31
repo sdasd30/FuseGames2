@@ -128,11 +128,11 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 65
+        width: 66
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 6, y: 6, z: 14, w: 6}
+      border: {x: 5, y: 5, z: 16, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -147,13 +147,13 @@ TextureImporter:
       name: Laser_1
       rect:
         serializedVersion: 2
-        x: 65
+        x: 66
         y: 0
-        width: 65
+        width: 66
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 6, y: 6, z: 14, w: 6}
+      border: {x: 6, y: 5, z: 16, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: 0
