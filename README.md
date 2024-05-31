@@ -5,6 +5,7 @@ Small Games Developed for the FUSE program. Organized into directories containin
 
 1. [**Hyperspeed**](https://sdasd30.github.io/FuseHyperspeed/)
 2. [**FuseDDR**](https://sdasd30.github.io/FuseDDR/)
+3. [**Laser Commander**](https://sdasd30.github.io/Fuse2DRunner/)
 
 # Compilation Guide
 To compile the game, you will need Unity Editor version 2022.3.16f1. You can aquire this Unity version through the project managment application [Unity Hub](https://unity.com/unity-hub).
